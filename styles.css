@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1F1717;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#mainSection{
+    padding: 28px;
+    width: min(777px, 95%);
+    height: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+#mainSection header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+#mainSection .dialog-boxes{
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.dialog-boxes .dialog-box{
+    padding: 8px;
+    background-color: #F4BF96;
+    width: min(250px, 100%);
+    height: 180px;
+    margin: 5px auto;
+    cursor: default;
+    transition: 0.33s;
+}
+.dialog-boxes .dialog-box:hover{
+   transform: translateY(-5px);
+   transition: 0.33s;
+}
